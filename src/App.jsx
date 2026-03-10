@@ -1,56 +1,44 @@
+// import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+//import './App.css'
+
 function App() {
-  const year = 2026;
-  const title = "React JS";
-  const isAvailable = true;
+  //js code... number,string,undefined,boolean,object
 
-  const student = {
-    name: "Anas Sheikh",
-    age: 24,
-    city: "Ahmedabad",
-  };
+  var year = 2026;
+  var title = "React Js";
+  var isAvailable = true;
+  //jsx..
 
-  const containerStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100vh",
-    background: "linear-gradient(135deg, #667eea, #764ba2)",
-    fontFamily: "Arial",
-  };
-
-  const cardStyle = {
-    background: "white",
-    padding: "40px",
-    borderRadius: "15px",
-    width: "350px",
-    boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-    textAlign: "center",
-  };
-
-  const statusStyle = {
-    color: isAvailable ? "green" : "red",
-    fontWeight: "bold",
+  var student = {
+    name: "amit",
+    age: 23,
+    city: "ahmedabad",
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={cardStyle}>
-        <h1>React Practice Demo</h1>
-
-        <h2>Year: {year}</h2>
-        <h2>Title: {title}</h2>
-
-        <h3>
-          Available: <span style={statusStyle}>{isAvailable ? "TRUE" : "FALSE"}</span>
-        </h3>
-
-        <hr />
-
-        <h2>Student Info</h2>
-        <p>Name: {student.name}</p>
-        <p>Age: {student.age}</p>
-        <p>City: {student.city}</p>
-      </div>
+    <div
+      style={{
+        border: "2px solid black",
+        padding: "16px",
+        margin: "16px",
+      }}
+    >
+      <h1>HELLO</h1>
+      {year}
+      <h1>YEAR : {year}</h1>
+      <h2>Title : {title}</h2>
+      <h1>ALL TAG MUST HAVE CLOSING TAG</h1> <br></br>
+      <h3>Available???? {isAvailable == true ? "TRUE" : "FALSE"}</h3>
+      <h4>AT A TIME WE CAN RETURN ONLY 1 TAG....</h4>
+      <h4>
+        whatever written inside return statment will be display on browser
+      </h4>
+      {/* <h2>{student}</h2> */}
+      <h2>Name :{student.name}</h2>
+      <h3>AGE : {student.age}</h3>
+      <h3>city : {student.city}</h3>
     </div>
   );
 }
