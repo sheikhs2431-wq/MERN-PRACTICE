@@ -8,13 +8,13 @@ export const HeaderComponent = () => {
         HeaderComponent
       </div>
 
-      <div className="header-nav">
+      {/* <div className="header-nav">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
 
-      <button className="header-btn">Login</button>
+      <button className="header-btn">Login</button> */}
     </div>
   );
 };
