@@ -1,4 +1,3 @@
-
 MERN :
 
 mongo db :data store
@@ -98,3 +97,34 @@ export default --> without {} import
 export const --> with {} import
 
 why className ??? not class ...
+
+array: 
+foreach <<-->> map
+
+
+for(let i=0;i<cars.length;i++){
+
+	console.log(cars[i])
+}
+
+{
+            cars.map((c)=>{
+                return <h1>{c}</h1>
+            })
+}
+
+
+{
+            cars.map((c)=>{
+                return 
+				<h1>{c}</h1>
+            })
+}
+
+{
+            cars.map((c)=>{
+                return (
+					<h1>{c}</h1>
+					)
+            })
+}
