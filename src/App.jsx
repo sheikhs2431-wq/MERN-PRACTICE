@@ -13,11 +13,21 @@ import { MapDemo7 } from "./components/MapDemo7";
 import { MapDemo8 } from "./components/MapDemo8";
 import { MapDemo9 } from "./components/MapDemo9";
 import { MapDemo10 } from "./components/MapDemo10";
+import { Route, Routes } from "react-router-dom";
+import { NetflixHome } from "./components/NetflixHome";
+import { NetflixMovies } from "./components/NetflixMovies";
+import { NetflixShows } from "./components/NetflixShows";
+import { Navbar } from "./components/Navbar";
+import { HomeComponent } from "./components/HomeComponent";
+import { NetflixAnime } from "./components/NetflixAnime";
+import { NetflixOriginal } from "./components/NetflixOriginal";
+import { NetflixThriller } from "./components/NetflixThriller";
 
 function App() {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <Navbar></Navbar>
+      {/* <HeaderComponent></HeaderComponent> */}
       {/* <MapDemo1></MapDemo1> */}
       {/* <MapDemo2></MapDemo2> */}
       {/* <MapDemo3></MapDemo3> */}
@@ -27,10 +37,19 @@ function App() {
       {/* <MapDemo7></MapDemo7> */}
       {/* <MapDemo8></MapDemo8> */}
       {/* <MapDemo9></MapDemo9> */}
-      <MapDemo10></MapDemo10>
+      {/* <MapDemo10></MapDemo10> */}
       {/* <ContentComponent></ContentComponent> */}
       {/* <PortfolioComponent></PortfolioComponent> */}
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
+      <Routes>
+        <Route path="netflixhome" element={<NetflixHome></NetflixHome>}></Route>
+        <Route path="netflixmovies" element = {<NetflixMovies/>}></Route>
+        <Route path="netflixshows" element = {<NetflixShows></NetflixShows>}></Route>
+        <Route path="netflixanime" element = {<NetflixAnime></NetflixAnime>}></Route>
+        <Route path="netflixoriginal" element = {<NetflixOriginal></NetflixOriginal>}></Route>
+        <Route path="netflixthriller" element = {<NetflixThriller></NetflixThriller>}></Route>
+        <Route path="/" element = {<HomeComponent/>}></Route>
+      </Routes>
     </div>
   );
 }
