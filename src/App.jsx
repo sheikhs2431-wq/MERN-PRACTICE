@@ -22,6 +22,10 @@ import { HomeComponent } from "./components/HomeComponent";
 import { NetflixAnime } from "./components/NetflixAnime";
 import { NetflixOriginal } from "./components/NetflixOriginal";
 import { NetflixThriller } from "./components/NetflixThriller";
+import { ErrorNotFound } from "./components/ErrorNotFound";
+import { Watch } from "./components/Watch";
+import { TeamDetail } from "./components/TeamDetail";
+import { Team } from "./components/Team";
 
 function App() {
   return (
@@ -43,12 +47,31 @@ function App() {
       {/* <FooterComponent></FooterComponent> */}
       <Routes>
         <Route path="netflixhome" element={<NetflixHome></NetflixHome>}></Route>
-        <Route path="netflixmovies" element = {<NetflixMovies/>}></Route>
-        <Route path="netflixshows" element = {<NetflixShows></NetflixShows>}></Route>
-        <Route path="netflixanime" element = {<NetflixAnime></NetflixAnime>}></Route>
-        <Route path="netflixoriginal" element = {<NetflixOriginal></NetflixOriginal>}></Route>
-        <Route path="netflixthriller" element = {<NetflixThriller></NetflixThriller>}></Route>
-        <Route path="/" element = {<HomeComponent/>}></Route>
+        <Route path="netflixmovies" element={<NetflixMovies />}></Route>
+        <Route
+          path="netflixshows"
+          element={<NetflixShows></NetflixShows>}
+        ></Route>
+        <Route
+          path="netflixanime"
+          element={<NetflixAnime></NetflixAnime>}
+        ></Route>
+        <Route
+          path="netflixoriginal"
+          element={<NetflixOriginal></NetflixOriginal>}
+        ></Route>
+        <Route
+          path="netflixthriller"
+          element={<NetflixThriller></NetflixThriller>}
+        ></Route>
+        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/watch/:name" element={<Watch></Watch>}></Route>
+        <Route path="/*" element={<ErrorNotFound></ErrorNotFound>}></Route>
+        <Route
+          path="/teamdetail/:name"
+          element={<TeamDetail></TeamDetail>}
+        ></Route>
+        <Route path="/team" element={<Team></Team>}></Route>
       </Routes>
     </div>
   );

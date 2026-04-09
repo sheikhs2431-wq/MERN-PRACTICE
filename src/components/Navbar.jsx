@@ -47,6 +47,16 @@ export const Navbar = () => {
                 Thriller
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/netflixmovies">
+                Movies
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/team">
+                IPL Teams
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
