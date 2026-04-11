@@ -26,6 +26,10 @@ import { ErrorNotFound } from "./components/ErrorNotFound";
 import { Watch } from "./components/Watch";
 import { TeamDetail } from "./components/TeamDetail";
 import { Team } from "./components/Team";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStateDemo3 } from "./components/UseStateDemo3";
+import { FunctionDemo1 } from "./components/FunctionDemo1";
 
 function App() {
   return (
@@ -72,6 +76,10 @@ function App() {
           element={<TeamDetail></TeamDetail>}
         ></Route>
         <Route path="/team" element={<Team></Team>}></Route>
+        <Route path="/usestatedemo1" element = {<UseStateDemo1></UseStateDemo1>} />
+      <Route path="/usestatedemo2" element = {<UseStateDemo2></UseStateDemo2>} />
+      <Route path="/usestatedemo3" element = {<UseStateDemo3></UseStateDemo3>} />
+      <Route path="/fundemo1" element = {<FunctionDemo1></FunctionDemo1>} />
       </Routes>
     </div>
   );
