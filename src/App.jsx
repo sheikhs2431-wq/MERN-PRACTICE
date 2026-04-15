@@ -30,6 +30,8 @@ import { UseStateDemo1 } from "./components/UseStateDemo1";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseStateDemo3 } from "./components/UseStateDemo3";
 import { FunctionDemo1 } from "./components/FunctionDemo1";
+import { Employees } from "./components/Employees";
+import { InputDemo1 } from "./components/Input/InputDemo1";
 
 function App() {
   return (
@@ -80,6 +82,8 @@ function App() {
       <Route path="/usestatedemo2" element = {<UseStateDemo2></UseStateDemo2>} />
       <Route path="/usestatedemo3" element = {<UseStateDemo3></UseStateDemo3>} />
       <Route path="/fundemo1" element = {<FunctionDemo1></FunctionDemo1>} />
+      <Route path="/employees" element= {<Employees></Employees>}></Route>
+      <Route path="/inputdemo1" element={<InputDemo1></InputDemo1>}></Route>
       </Routes>
     </div>
   );
